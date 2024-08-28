@@ -1,0 +1,222 @@
+
+.wego-grid{
+    
+}
+.wego-grid-title{
+    font-family: Arial, sans-serif;
+    margin: 30px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.title-1{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.imageContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    margin: auto;
+    width: min(100%, 80rem);
+    padding-block: 2rem;
+    margin-inline: auto;
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+.grid-row-span-2{
+    grid-row: span 2;
+}
+.grid-col-span-1{
+    grid-column: span 1;
+}
+
+
+
+.imageContainer  div img {
+    width:100%;
+    height: 100%;
+    object-fit: cover; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.imageContainer:last-child  {
+    grid-column-start:4 ;
+    grid-row-start: 1;
+    background: red;
+}
+
+
+
+.motion{
+    font-family: Arial, sans-serif;
+    margin: 30px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.swiper {
+    width: 100%;
+    height: 350px;
+    margin: 40px 0;
+    }
+
+    .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+
+/* Hover Effects for Images */
+.imageContainer div img:hover,
+.grid-container div img:hover,
+.swiper-slide img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    filter: brightness(0.8); /* Darken the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Add a deeper shadow */
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: auto;
+    width: min(100%, 80rem);
+    padding-block: 2rem;
+    margin-inline: auto;
+}
+.grid-container  div img {
+    width:100%;
+    height: 100%;
+    object-fit: cover; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-container:last-child  {
+    grid-column-start:4 ;
+    grid-row-start: 1;
+    
+}
+
+
+@media screen and (max-width: 760px) {
+    .imageContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin: auto;
+        width: min(100%, 80rem);
+        padding-block: 2rem;
+        margin-inline: auto;
+    }
+    
+    .grid-col-span-2 {
+        grid-column: span 2;
+    }
+    .grid-row-span-2{
+        grid-row: span 2;
+    }
+    .grid-col-span-1{
+        grid-column: span 1;
+    }
+    
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin: auto;
+        width: min(100%, 80rem);
+        padding-block: 2rem;
+        margin-inline: auto;
+    }
+    .wego-grid-title{
+        font-family: Arial, sans-serif;
+        margin: 10px 10px;
+        
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    .title-1{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+  }
+  
+  @media screen and (min-width: 760px) and ( max-width: 960px) {
+    .imageContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin: auto;
+        width: min(100%, 80rem);
+        padding-block: 2rem;
+        margin-inline: auto;
+    }
+    
+    .grid-col-span-2 {
+        grid-column: span 2;
+    }
+    .grid-row-span-2{
+        grid-row: span 2;
+    }
+    .grid-col-span-1{
+        grid-column: span 1;
+    }
+    
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin: auto;
+        width: min(100%, 80rem);
+        padding-block: 2rem;
+        margin-inline: auto;
+    }
+    .grid-cols-spans-2{
+        grid-column: span 2;
+    }
+    .grid-rows-spans-2{
+        grid-row: span 2;
+    }
+    .wego-grid-title{
+        font-family: Arial, sans-serif;
+        margin: 10px 10px;
+        
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    .title-1{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+  }
