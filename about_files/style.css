@@ -675,6 +675,11 @@ progress {
   }
 }
 
+.team-list{
+  display: grid;
+  grid-template-columns: 3;
+}
+
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -742,6 +747,8 @@ progress {
   font-size: 0.875em;
   color: var(--bs-secondary-color);
 }
+
+
 
 .container,
 .container-fluid,
@@ -17767,6 +17774,12 @@ a.badge:hover {
   transition: all 0.5s ease;
   -webkit-transform: scale(1.001);
           transform: scale(1.001);
+  
+  object-fit: contain;
+          
+}
+.img-scale{
+  width: 100px;
 }
 
 .card.card-img-scale:hover .img-scale {
@@ -17794,7 +17807,12 @@ a.badge:hover {
 .card-metro-hover:hover:after {
   opacity: 1;
 }
-
+.card-hover-shadow:hover{
+  box-shadow: white;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  
+}
 .card.card-hover-shadow {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
