@@ -10692,7 +10692,15 @@ textarea.form-control-lg {
 .rounded {
   border-radius: var(--bs-border-radius) !important;
 }
-
+/* .rounded img{
+  width:1px;
+  height:10px;
+  object-fit:cover;
+} */
+.img-container{
+  width: 100px;
+  height: 100px;
+}
 .rounded-0 {
   border-radius: 0 !important;
 }
